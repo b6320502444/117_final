@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,i,j;
+    int a,b,c,i,j,row=0;
     scanf("%d %d %d",&a,&b,&c);
     int x[a][a],y[b][b],z[c][c];
     for(i=0;i<a;i++)
@@ -9,6 +9,8 @@ int main()
         for(j=0;j<a;j++)
         {
             scanf("%d",&x[i][j]);
+            row+=x[i][j];
+
         }
     }
     for(i=0;i<b;i++)

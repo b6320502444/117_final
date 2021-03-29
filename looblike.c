@@ -14,7 +14,7 @@ int main()
         if(max<a[i])
         {
             max=a[i];
-            x[0]=i+1;
+            x[n]=i+1;
         }
     }
     for(i=0;i<n;i++)
@@ -22,10 +22,9 @@ int main()
             if(max==a[i])
             {
                 max=a[i];
-                x[1]=i+1;
+                x[n]=i+1;
             }
     }
-    for(i=0;i<n;i++)
     printf("%d",x[n]);
 return 0;
 }
